@@ -2,11 +2,10 @@ import firebase from 'firebase';
 
 try {
   var config = {
-      apiKey: "AIzaSyBk_9SG0t8eky8fTy8-tu_XRlr2Y7OY67s",
-      authDomain: "arrowood-todo-app.firebaseapp.com",
-      databaseURL: "https://arrowood-todo-app.firebaseio.com",
-      storageBucket: "arrowood-todo-app.appspot.com",
-      messagingSenderId: "335701366254"
+      apiKey: process.env.API_KEY,
+      authDomain: process.env.AUTH_DOMAIN,
+      databaseURL: process.env.DATABASE_URL,
+      storageBucket: process.env.STORAGE_BUCKET
     };
   firebase.initializeApp(config);
 } catch (e) {
