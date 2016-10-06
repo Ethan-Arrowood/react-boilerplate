@@ -6,9 +6,9 @@
   "scripts": {
     "test": "NODE_ENV=test karma start",
     "build": "webpack",
-    "start": "npm run build && node server.js",
+    "start": "npm run build && node server.js"
   },
-  "author": "Andrew Mead",
+  "author": "Ethan Arrowood",
   "license": "MIT",
   "dependencies": {
     "axios": "^0.9.1",
